@@ -51,6 +51,7 @@ export function HeroSection() {
           </button>
           <button
             className="glass px-8 py-3 rounded-lg font-medium hover:scale-105 transition-transform"
+            onClick={() => alert("CV download coming soon! Contact me directly for now.")}
             data-testid="button-download-cv"
           >
             Download CV
