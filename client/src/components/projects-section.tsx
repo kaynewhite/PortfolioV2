@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     title: "RecipeHub",
     description: "A full-stack recipe sharing platform built with Python Flask, featuring user authentication and recipe management.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/images/login.jpg",
     tags: [
       { name: "Python Flask", color: "gradient-purple-blue" },
       { name: "Web", color: "gradient-cyan" },
@@ -26,7 +26,7 @@ const projects: Project[] = [
   {
     title: "Portfolio Website",
     description: "Modern portfolio website built with React frontend and Express backend, featuring responsive design and smooth animations.",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/images/portfolioCover.jpg",
     tags: [
       { name: "React", color: "gradient-purple-blue" },
       { name: "Express", color: "gradient-cyan" },
@@ -37,7 +37,7 @@ const projects: Project[] = [
   {
     title: "Bomberman Game",
     description: "Classic Bomberman game implementation in Java with OOP principles, featuring AI enemies and power-ups.",
-    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/images/bomberman.jpg",
     tags: [
       { name: "Java", color: "gradient-purple-blue" },
       { name: "Game", color: "gradient-cyan" },
@@ -48,7 +48,7 @@ const projects: Project[] = [
   {
     title: "Platform Game",
     description: "2D platform game developed in Java with custom physics engine and level progression system.",
-    image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/images/platformGame.png",
     tags: [
       { name: "Java", color: "gradient-purple-blue" },
       { name: "Game", color: "gradient-cyan" },
@@ -59,7 +59,7 @@ const projects: Project[] = [
   {
     title: "QR Generator/Reader",
     description: "Desktop application for generating and reading QR codes, built with Java and Windows Forms integration.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/images/qr.jpg",
     tags: [
       { name: "Java", color: "gradient-purple-blue" },
       { name: "Windows Forms", color: "gradient-cyan" },
@@ -70,7 +70,7 @@ const projects: Project[] = [
   {
     title: "Conway's Game of Life",
     description: "Interactive simulation of Conway's Game of Life with custom patterns and real-time visualization.",
-    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/images/conway.jpg",
     tags: [
       { name: "C#", color: "gradient-purple-blue" },
       { name: "Simulation", color: "gradient-cyan" },
