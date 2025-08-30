@@ -3,7 +3,7 @@ import { createServer, type Server } from "http";
 import { z } from "zod";
 import { insertContactSchema } from "@shared/schema";
 import { storage } from "./storage";
-import htmlPdf from "html-pdf-node";
+import puppeteer from "puppeteer";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -235,13 +235,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
         </html>
       `;
 
-      const options = { 
+      
+      const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+      const page = await browser.newPage();
+      await page.setContent(cvHtml);
+      const pdfBuffer = await page.pdf({
         format: 'A4',
         margin: { top: '20px', right: '20px', bottom: '20px', left: '20px' },
         printBackground: true
-      };
-      
-      const pdfBuffer = await htmlPdf.generatePdf({ content: cvHtml }, options);
+      });
+      await browser.close();
       
       res.setHeader('Content-Type', 'application/pdf');
       res.setHeader('Content-Disposition', 'attachment; filename="Ron_Religioso_CV.pdf"');
