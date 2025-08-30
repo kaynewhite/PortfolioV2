@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 4%);
+  --foreground: hsl(0, 0%, 90%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 90%);
+  --popover: hsl(0, 0%, 4%);
+  --popover-foreground: hsl(0, 0%, 90%);
+  --primary: hsl(262, 80%, 60%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 16%);
+  --secondary-foreground: hsl(0, 0%, 90%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 64%);
+  --accent: hsl(198, 93%, 60%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(356.3033, 90.5579%, 54.3137%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 16%);
+  --ring: hsl(262, 80%, 60%);
+  --chart-1: hsl(262, 80%, 60%);
+  --chart-2: hsl(198, 93%, 60%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(0, 0%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 90%);
+  --sidebar-primary: hsl(262, 80%, 60%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(0, 0%, 15%);
+  --sidebar-accent-foreground: hsl(198, 93%, 60%);
+  --sidebar-border: hsl(0, 0%, 20%);
+  --sidebar-ring: hsl(262, 80%, 60%);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(0, 0%, 4%);
+  --foreground: hsl(0, 0%, 90%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 90%);
+  --popover: hsl(0, 0%, 4%);
+  --popover-foreground: hsl(0, 0%, 90%);
+  --primary: hsl(262, 80%, 60%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 16%);
+  --secondary-foreground: hsl(0, 0%, 90%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 64%);
+  --accent: hsl(198, 93%, 60%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(356.3033, 90.5579%, 54.3137%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 16%);
+  --ring: hsl(262, 80%, 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gradient-purple-blue {
+    background: linear-gradient(135deg, hsl(262, 80%, 60%) 0%, hsl(217, 91%, 60%) 100%);
+  }
+
+  .gradient-cyan {
+    background: linear-gradient(135deg, hsl(198, 93%, 60%) 0%, hsl(262, 80%, 60%) 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(262, 80%, 60%) 0%, hsl(198, 93%, 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .particle {
+    position: absolute;
+    background: radial-gradient(circle, hsl(262, 80%, 60%, 0.8) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid hsl(262, 80%, 60%);
+  }
+
+  .skill-bar {
+    transition: width 2s ease-in-out;
+  }
+
+  .project-card {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+  }
+
+  .project-card:hover {
+    transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+  }
+
+  .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(262, 80%, 60%), hsl(198, 93%, 60%));
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-typing {
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+}
+
+@keyframes glow {
+  from { 
+    box-shadow: 0 0 20px hsl(262, 80%, 60%, 0.3); 
+  }
+  to { 
+    box-shadow: 0 0 30px hsl(262, 80%, 60%, 0.6), 0 0 40px hsl(198, 93%, 60%, 0.3); 
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+@keyframes typing {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; 
+  }
+}
+
+@keyframes blink-caret {
+  from, to { 
+    border-color: transparent; 
+  }
+  50% { 
+    border-color: hsl(262, 80%, 60%); 
+  }
+}
