@@ -1,0 +1,72 @@
+RON RELIGIOSO
+Software Engineer & Developer
+=================================
+
+CONTACT INFORMATION
+Email: Contact via portfolio website
+Portfolio: Available on Replit
+
+PROFESSIONAL SUMMARY
+===================
+Passionate software engineer with expertise in web development, desktop applications, and game development. Experienced in multiple programming languages and frameworks, with a strong foundation in object-oriented programming principles.
+
+TECHNICAL SKILLS
+===============
+Web Development:
+• HTML, CSS, JavaScript
+• Python Flask
+• React, Express
+
+Desktop Development:
+• Java (Object-Oriented Programming)
+• C# (Object-Oriented Programming) 
+• Windows Forms
+
+Database:
+• SQL
+• Database Management
+
+FEATURED PROJECTS
+================
+RecipeHub
+• Technologies: Python Flask, Web Development
+• A full-stack recipe sharing platform featuring user authentication and recipe management. Built with Python Flask backend and responsive frontend design.
+
+Portfolio Website
+• Technologies: React, Express, Node.js
+• Modern portfolio website with responsive design and smooth animations. Features contact form integration and project showcase.
+
+Bomberman Game
+• Technologies: Java, Game Development
+• Classic Bomberman game implementation using Java with OOP principles. Features AI enemies, power-ups, and interactive gameplay.
+
+Platform Game
+• Technologies: Java, Game Development
+• 2D platform game with custom physics engine and level progression system. Demonstrates advanced game development concepts.
+
+QR Generator/Reader
+• Technologies: Java, Windows Forms
+• Desktop application for generating and reading QR codes. Built with Java and Windows Forms integration for cross-platform compatibility.
+
+Conway's Game of Life Simulator
+• Technologies: C#, Simulation
+• Interactive simulation of Conway's Game of Life with custom patterns and real-time visualization. Demonstrates understanding of algorithms and UI development.
+
+Student Violation Management System
+• Technologies: C#, Database Management
+• Desktop application for managing student violations with database integration. Features comprehensive CRUD operations and reporting.
+
+CORE COMPETENCIES
+================
+• Object-Oriented Programming (Java, C#)
+• Web Development (Frontend & Backend)
+• Game Development & Physics Programming
+• Database Design & Management
+• Desktop Application Development
+• Problem Solving & Algorithm Implementation
+• User Interface Design
+• Software Architecture & Design Patterns
+
+EDUCATION & LEARNING
+===================
+Self-taught developer with strong foundations in computer science principles, gained through hands-on project development and continuous learning.
