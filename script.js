@@ -290,13 +290,8 @@ function startTypingAnimation() {
 
 // Download CV function
 function downloadCV() {
-    // Create a link element and trigger download of the PDF
-    const link = document.createElement('a');
-    link.href = 'client/src/assets/Ron_Enrick_Religioso_Resume.pdf';
-    link.download = 'Ron_Enrick_Religioso_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Use the API endpoint for CV download instead of direct file access
+    window.open('/api/cv/download', '_blank');
 }
 
 // Utility function for throttling
