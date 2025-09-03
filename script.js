@@ -1,4 +1,3 @@
-// Global variables
 let activeSection = 'home';
 let isScrolling = false;
 
