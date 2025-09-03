@@ -175,10 +175,7 @@ function animateSkillsSection() {
         sectionHeader.classList.add('animate');
         skillCategories.forEach(category => category.classList.add('animate'));
         
-        // Animate skill bars after a delay
-        setTimeout(() => {
-            animateSkillBars();
-        }, 500);
+        // Skills animation no longer needed
     }
 }
 
@@ -204,22 +201,9 @@ function animateContactSection() {
     }
 }
 
-// Setup and animate skill bars
+// Setup skill items (no longer using progress bars)
 function setupSkillBars() {
-    const skillProgresses = document.querySelectorAll('.skill-progress');
-    skillProgresses.forEach(progress => {
-        const width = progress.getAttribute('data-width');
-        progress.style.setProperty('--width', width + '%');
-    });
-}
-
-function animateSkillBars() {
-    const skillProgresses = document.querySelectorAll('.skill-progress');
-    skillProgresses.forEach((progress, index) => {
-        setTimeout(() => {
-            progress.classList.add('animate');
-        }, index * 100);
-    });
+    // No longer needed - keeping function for compatibility
 }
 
 // Setup contact form
