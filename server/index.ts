@@ -12,13 +12,16 @@ app.use(express.static('.'));
 app.post('/api/contact', (req, res) => {
     const { name, email, subject, message } = req.body;
     
-    console.log('Contact form submission:', {
-        name,
-        email,
-        subject,
-        message,
-        timestamp: new Date().toISOString()
-    });
+    console.log('=== NEW CONTACT FORM SUBMISSION ===');
+    console.log(`To: religiosoron@gmail.com`);
+    console.log(`From: ${name} (${email})`);
+    console.log(`Subject: ${subject}`);
+    console.log(`Message: ${message}`);
+    console.log(`Timestamp: ${new Date().toISOString()}`);
+    console.log('=====================================');
+    
+    // TODO: Implement actual email sending to religiosoron@gmail.com
+    // For now, we're logging the contact form data to the console
     
     setTimeout(() => {
         res.json({ success: true, message: 'Message received successfully!' });

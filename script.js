@@ -266,7 +266,7 @@ function showNotification(message, type = 'success') {
 // Typing animation for hero subtitle
 function startTypingAnimation() {
     const typingText = document.querySelector('.typing-text');
-    const text = 'Full Stack Developer & Software Engineer';
+    const text = 'Web Developer and Software Engineer';
     let index = 0;
     
     typingText.textContent = '';
@@ -290,7 +290,13 @@ function startTypingAnimation() {
 
 // Download CV function
 function downloadCV() {
-    window.open('/api/cv/download', '_blank');
+    // Create a link element and trigger download of the PDF
+    const link = document.createElement('a');
+    link.href = 'client/src/assets/Ron_Enrick_Religioso_Resume.pdf';
+    link.download = 'Ron_Enrick_Religioso_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 // Utility function for throttling

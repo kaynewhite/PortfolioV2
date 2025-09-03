@@ -186,6 +186,7 @@ body {
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 0.8s ease 0.2s forwards, float 6s ease-in-out 1s infinite;
+    white-space: nowrap;
 }
 
 .text-gradient {
