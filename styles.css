@@ -641,20 +641,23 @@ section {
 .notification {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 0.5rem;
     padding: 1rem 1.5rem;
     color: var(--foreground);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transform: translateX(400px);
     transition: transform 0.3s ease;
     z-index: 10000;
+    max-width: 90%;
+    width: auto;
+    text-align: center;
 }
 
 .notification.show {
-    transform: translateX(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .notification.success {
